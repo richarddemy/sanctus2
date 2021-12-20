@@ -71,7 +71,7 @@
       "popupProduct": true,
       "checkoutLabelButton": "Buy Now              "
     },
-    "uniqCompNum": 54,
+    "uniqCompNum": 55,
     "versionPublish": "5.5.5",
     "screenshot": "screenshot.png",
     "favicon": false,
@@ -2987,6 +2987,92 @@
           "_global": true,
           "_once": "menu",
           "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)",
+              "@media (max-width: 767px)": {
+                "padding-top": "(@paddingTop * 2px)",
+                "padding-bottom": "(@paddingBottom * 2px)"
+              }
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            "img": {
+              "height": "100%",
+              "margin": "0 auto",
+              "padding-bottom": "2rem"
+            },
+            "H1": {
+              "color": "#132c70"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#132c70"
+            },
+            "H3": {
+              "color": "#132c70"
+            },
+            ".mbr-iconfont": {
+              "padding-left": "0.4rem"
+            },
+            ".link": {
+              "display": "flex",
+              "width": "fit-content",
+              "transition": "all 0.3s",
+              "align-items": "center",
+              ".link-ico": {
+                "padding-top": "2px",
+                "transition": "padding 0.3s"
+              },
+              "&:hover": {
+                "color": "@primaryColor !important"
+              },
+              "&:hover .link-ico": {
+                "color": "@primaryColor !important",
+                "padding-left": "10px"
+              }
+            },
+            "DIV": {
+              "color": "#57468b"
+            },
+            ".text-1": {
+              "line-height": "1"
+            },
+            ".container-fluid": {
+              "max-width": "1300px",
+              "padding": "0 3rem"
+            },
+            "@media (max-width: 767px)": {
+              ".mbr-section-title": {
+                "margin-bottom": "2rem",
+                "width": "auto",
+                "margin": "auto"
+              }
+            },
+            "@media (min-width: 767px)": {
+              ".mbr-section-title": {
+                "margin-bottom": "2rem",
+                "width": "42rem",
+                "margin": "auto"
+              }
+            }
+          },
+          "_name": "title3",
+          "_sourceTheme": "luxurym4",
+          "_customHTML": "<section class=\"title3 luxurym4_title3\" group=\"Titles\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        \n\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/rign4.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/108207003\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container-fluid\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\" col-md-12 col-lg-12 align-left\">\n              <h1 class=\"mbr-section-title align-center mbr-white pb-2 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><i>\n                  Who Needs Bodywork?</i></h1>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sSawbqhCAM",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "title3-1i"
         },
         {
           "alias": false,

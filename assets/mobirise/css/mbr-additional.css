@@ -3001,6 +3001,76 @@ section.lazy-placeholder:after {
   flex-direction: row;
   margin-right: 1.5rem;
 }
+.cid-sSawbqhCAM {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  background-color: #ffffff;
+}
+@media (max-width: 767px) {
+  .cid-sSawbqhCAM {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+}
+.cid-sSawbqhCAM img {
+  height: 100%;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+.cid-sSawbqhCAM H1 {
+  color: #132c70;
+}
+.cid-sSawbqhCAM .mbr-text,
+.cid-sSawbqhCAM .mbr-section-btn {
+  color: #132c70;
+}
+.cid-sSawbqhCAM H3 {
+  color: #132c70;
+}
+.cid-sSawbqhCAM .mbr-iconfont {
+  padding-left: 0.4rem;
+}
+.cid-sSawbqhCAM .link {
+  display: flex;
+  width: fit-content;
+  transition: all 0.3s;
+  align-items: center;
+}
+.cid-sSawbqhCAM .link .link-ico {
+  padding-top: 2px;
+  transition: padding 0.3s;
+}
+.cid-sSawbqhCAM .link:hover {
+  color: #132c70 !important;
+}
+.cid-sSawbqhCAM .link:hover .link-ico {
+  color: #132c70 !important;
+  padding-left: 10px;
+}
+.cid-sSawbqhCAM DIV {
+  color: #57468b;
+}
+.cid-sSawbqhCAM .text-1 {
+  line-height: 1;
+}
+.cid-sSawbqhCAM .container-fluid {
+  max-width: 1300px;
+  padding: 0 3rem;
+}
+@media (max-width: 767px) {
+  .cid-sSawbqhCAM .mbr-section-title {
+    margin-bottom: 2rem;
+    width: auto;
+    margin: auto;
+  }
+}
+@media (min-width: 767px) {
+  .cid-sSawbqhCAM .mbr-section-title {
+    margin-bottom: 2rem;
+    width: 42rem;
+    margin: auto;
+  }
+}
 .cid-sGPOh8proO {
   overflow: hidden !important;
   padding-top: 60px;
